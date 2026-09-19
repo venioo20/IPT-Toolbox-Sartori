@@ -35,3 +35,45 @@ try
     catch (OperationCanceledException) { Console.WriteLine("OK: annulation de la simulation"); }
 }
 finally { Environment.SetEnvironmentVariable("PATH", path); }
+
+var vaultPath = Path.Combine(root, "test-results", "license-vault-test.dat");
+Directory.CreateDirectory(Path.GetDirectoryName(vaultPath)!);
+var vaultService = new LicenseVaultService(vaultPath, new TestProtector());
+var product = new IPT.Toolbox.Core.Models.LicensedProduct
+{
+    Name = "Produit de test", Edition = "Technicien",
+    Type = IPT.Toolbox.Core.Models.LicenseType.IndividualKeys,
+    SeatsOwned = 2, WarningThreshold = 1,
+    Secrets = [new() { Value = "CLE-SECRETE-001" }, new() { Value = "CLE-SECRETE-002" }]
+};
+var vault = new IPT.Toolbox.Core.Models.LicenseVault { Products = [product] };
+vault.Assignments.Add(new IPT.Toolbox.Core.Models.LicenseAssignment
+{
+    ProductId = product.Id, SecretId = product.Secrets[0].Id,
+    ClientName = "Client test", DeviceName = "PC-TEST"
+});
+await vaultService.SaveAsync(vault);
+var rawVault = await File.ReadAllBytesAsync(vaultPath);
+Check(!System.Text.Encoding.UTF8.GetString(rawVault).Contains("CLE-SECRETE"), "Le coffre ne contient pas les clés en clair");
+var loadedVault = await vaultService.LoadAsync();
+Check(loadedVault.Products[0].Secrets[0].Value == "CLE-SECRETE-001", "Lecture du coffre chiffré");
+var licenseSummary = LicenseVaultService.GetSummaries(loadedVault).Single();
+Check(licenseSummary.Total == 2 && licenseSummary.Used == 1 && licenseSummary.Available == 1 && licenseSummary.Status == "Stock faible", "Compteurs et alerte de stock");
+loadedVault.Assignments[0].ReleasedAtUtc = DateTime.UtcNow;
+Check(LicenseVaultService.GetSummaries(loadedVault).Single().Available == 2, "Restitution d'une licence");
+if (OperatingSystem.IsWindows())
+{
+    var dpapi = new WindowsDpapiProtector();
+    var clearSecret = System.Text.Encoding.UTF8.GetBytes("secret-dpapi-test");
+    var protectedSecret = dpapi.Protect(clearSecret);
+    Check(!protectedSecret.SequenceEqual(clearSecret), "DPAPI chiffre les données");
+    Check(dpapi.Unprotect(protectedSecret).SequenceEqual(clearSecret), "DPAPI déchiffre pour l'utilisateur Windows courant");
+    Array.Clear(clearSecret);
+    Array.Clear(protectedSecret);
+}
+
+sealed class TestProtector : IDataProtector
+{
+    public byte[] Protect(byte[] clearData) => clearData.Select(x => (byte)(x ^ 0xA5)).ToArray();
+    public byte[] Unprotect(byte[] protectedData) => Protect(protectedData);
+}

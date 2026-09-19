@@ -1,6 +1,12 @@
 # IPT Toolbox Sartori — Informatique Pour Tous
 
-Version 0.2.0. Projet Windows Forms C# .NET 8, modifié à partir de votre v0.1.
+Version 0.3.0. Projet Windows Forms C# .NET 8, modifié à partir de votre v0.1.
+
+## Licences professionnelles (première étape)
+
+Le bouton **LICENCES PRO** ouvre un inventaire local permettant d'ajouter un produit, son édition, son type de licence, le nombre de places, les échéances et, lorsque le contrat l'autorise, ses clés. Les licences peuvent être attribuées manuellement à un client et un poste, puis libérées. Des états signalent un stock faible, épuisé ou une expiration proche.
+
+Le coffre complet est chiffré par Windows pour l'utilisateur courant et stocké dans `%LOCALAPPDATA%/IPT Toolbox Sartori/license-vault.dat`. Il ne doit pas être copié dans le dépôt GitHub. Les clés ne sont jamais affichées dans les tableaux ou écrites dans les journaux. Cette première étape ne réalise aucune activation automatique auprès d'un éditeur et ne synchronise pas plusieurs techniciens.
 
 ## Utilisation
 

@@ -139,6 +139,12 @@ public partial class MainForm : Form
 
     private void cancelButton_Click(object? sender, EventArgs e) => _runCts?.Cancel();
 
+    private void licensesButton_Click(object? sender, EventArgs e)
+    {
+        using var form = new LicenseManagerForm();
+        form.ShowDialog(this);
+    }
+
     private void SetBusy(bool busy)
     {
         prepareButton.Enabled = !busy;

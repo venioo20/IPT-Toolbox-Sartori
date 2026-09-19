@@ -8,7 +8,7 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <AssemblyName>IPT.Toolbox</AssemblyName>
     <RootNamespace>IPT.Toolbox.App</RootNamespace>
-    <DebugType>none</DebugType><DebugSymbols>false</DebugSymbols><Version>0.2.0</Version><Product>IPT Toolbox Sartori — Informatique Pour Tous</Product><Title>IPT Toolbox Sartori</Title>
+    <DebugType>none</DebugType><DebugSymbols>false</DebugSymbols><Version>0.3.0</Version><Product>IPT Toolbox Sartori — Informatique Pour Tous</Product><Title>IPT Toolbox Sartori</Title>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\IPT.Toolbox.Core\IPT.Toolbox.Core.csproj" />

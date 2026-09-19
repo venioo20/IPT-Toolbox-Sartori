@@ -7,4 +7,8 @@ internal static class AppPaths
     public static string PackagesFile => Path.Combine(ConfigDirectory, "packages.json");
     public static string ProfilesFile => Path.Combine(ConfigDirectory, "profiles.json");
     public static string LogDirectory => Path.Combine(BaseDirectory, "logs");
+    public static string UserDataDirectory => Path.Combine(
+        Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+        "IPT Toolbox Sartori");
+    public static string LicenseVaultFile => Path.Combine(UserDataDirectory, "license-vault.dat");
 }

@@ -23,6 +23,7 @@ partial class MainForm
     private ProgressBar progressBar = null!;
     private Label statusLabel = null!;
     private TextBox logTextBox = null!;
+    private Button licensesButton = null!;
 
     protected override void Dispose(bool disposing)
     {
@@ -52,6 +53,7 @@ partial class MainForm
         progressBar = new ProgressBar();
         statusLabel = new Label();
         logTextBox = new TextBox();
+        licensesButton = new Button();
         machineGroupBox.SuspendLayout();
         profileGroupBox.SuspendLayout();
         packagesGroupBox.SuspendLayout();
@@ -71,6 +73,14 @@ partial class MainForm
         subtitleLabel.Name = "subtitleLabel";
         subtitleLabel.Size = new Size(151, 19);
         subtitleLabel.Text = "Informatique Pour Tous";
+        // licensesButton
+        licensesButton.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+        licensesButton.Location = new Point(746, 27);
+        licensesButton.Name = "licensesButton";
+        licensesButton.Size = new Size(230, 44);
+        licensesButton.Text = "LICENCES PRO";
+        licensesButton.UseVisualStyleBackColor = true;
+        licensesButton.Click += licensesButton_Click;
         // machineGroupBox
         machineGroupBox.Controls.Add(machineInfoLabel);
         machineGroupBox.Location = new Point(24, 100);
@@ -197,6 +207,7 @@ partial class MainForm
         Controls.Add(machineGroupBox);
         Controls.Add(subtitleLabel);
         Controls.Add(titleLabel);
+        Controls.Add(licensesButton);
         FormBorderStyle = FormBorderStyle.FixedSingle;
         MaximizeBox = false;
         MinimumSize = new Size(1016, 763);

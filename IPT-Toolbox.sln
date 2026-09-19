@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPT.Toolbox.Core", "src\IPT.Toolbox.Core\IPT.Toolbox.Core.csproj", "{4E13DB4B-31D8-4D8C-BD31-BF4885FA35E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPT.Toolbox.App", "src\IPT.Toolbox.App\IPT.Toolbox.App.csproj", "{5F3FEA27-93B0-4B8A-AD9B-9DB8B85F0B7A}"
+EndProject
+Global
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|Any CPU = Debug|Any CPU
+        Release|Any CPU = Release|Any CPU
+    EndGlobalSection
+    GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        {4E13DB4B-31D8-4D8C-BD31-BF4885FA35E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {4E13DB4B-31D8-4D8C-BD31-BF4885FA35E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {4E13DB4B-31D8-4D8C-BD31-BF4885FA35E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {4E13DB4B-31D8-4D8C-BD31-BF4885FA35E9}.Release|Any CPU.Build.0 = Release|Any CPU
+        {5F3FEA27-93B0-4B8A-AD9B-9DB8B85F0B7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {5F3FEA27-93B0-4B8A-AD9B-9DB8B85F0B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {5F3FEA27-93B0-4B8A-AD9B-9DB8B85F0B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {5F3FEA27-93B0-4B8A-AD9B-9DB8B85F0B7A}.Release|Any CPU.Build.0 = Release|Any CPU
+    EndGlobalSection
+EndGlobal

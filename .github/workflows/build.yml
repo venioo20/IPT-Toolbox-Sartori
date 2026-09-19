@@ -1,0 +1,25 @@
+name: Build and safety checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9 # v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Build
+        run: dotnet build IPT-Toolbox.sln -c Release -warnaserror
+      - name: Simulation and catalog safety
+        run: dotnet run --project tests/IPT.Toolbox.Checks.csproj -c Release -- .
+      - name: Publish self-contained Windows application
+        run: ./publish.ps1

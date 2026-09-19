@@ -1,0 +1,96 @@
+{
+  "profiles": [
+    {
+      "packageIds": [],
+      "description": "Aucun logiciel présélectionné. Choisissez un profil ou cochez vos logiciels.",
+      "name": "Personnalisé",
+      "id": "custom"
+    },
+    {
+      "packageIds": [
+        "7zip",
+        "firefox",
+        "vlc",
+        "sumatrapdf"
+      ],
+      "description": "Les outils de base pour un PC familial.",
+      "name": "Essentiel",
+      "id": "essential"
+    },
+    {
+      "packageIds": [
+        "7zip",
+        "firefox",
+        "libreoffice",
+        "sumatrapdf",
+        "pdfarranger",
+        "thunderbird",
+        "joplin"
+      ],
+      "description": "Documents, PDF, courrier et notes.",
+      "name": "Bureautique",
+      "id": "office"
+    },
+    {
+      "packageIds": [
+        "vlc",
+        "audacity",
+        "obs",
+        "handbrake",
+        "shotcut"
+      ],
+      "description": "Lecture, enregistrement et montage audio/vidéo.",
+      "name": "Multimédia",
+      "id": "multimedia"
+    },
+    {
+      "packageIds": [
+        "gimp",
+        "inkscape",
+        "krita",
+        "blender",
+        "greenshot"
+      ],
+      "description": "Image, illustration, capture et 3D.",
+      "name": "Création",
+      "id": "creative"
+    },
+    {
+      "packageIds": [
+        "7zip",
+        "notepadplusplus",
+        "windirstat",
+        "crystaldiskinfo",
+        "cpu-z",
+        "gpu-z",
+        "winmerge",
+        "putty"
+      ],
+      "description": "Diagnostic matériel et disque, comparaison et connexion SSH.",
+      "name": "Technicien",
+      "id": "technician"
+    },
+    {
+      "packageIds": [
+        "vscode",
+        "git",
+        "python",
+        "nodejs",
+        "sqlitebrowser",
+        "winmerge"
+      ],
+      "description": "Éditeur, Git, Python, Node.js et SQLite.",
+      "name": "Développement",
+      "id": "development"
+    },
+    {
+      "packageIds": [
+        "keepassxc",
+        "duplicati"
+      ],
+      "description": "Mots de passe locaux et sauvegardes à configurer après installation.",
+      "name": "Sécurité et sauvegarde",
+      "id": "backup"
+    }
+  ]
+}

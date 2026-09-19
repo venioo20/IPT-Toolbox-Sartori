@@ -1,0 +1,302 @@
+[
+  {
+    "id": "7zip.7zip",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/7/7zip/7zip",
+    "error": ""
+  },
+  {
+    "id": "Giorgiotani.Peazip",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/g/Giorgiotani/Peazip",
+    "error": ""
+  },
+  {
+    "id": "voidtools.Everything",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/v/voidtools/Everything",
+    "error": ""
+  },
+  {
+    "id": "WinDirStat.WinDirStat",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/w/WinDirStat/WinDirStat",
+    "error": ""
+  },
+  {
+    "id": "Microsoft.PowerToys",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/m/Microsoft/PowerToys",
+    "error": ""
+  },
+  {
+    "id": "JAMSoftware.TreeSize.Free",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/j/JAMSoftware/TreeSize/Free",
+    "error": ""
+  },
+  {
+    "id": "CrystalDewWorld.CrystalDiskInfo",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/c/CrystalDewWorld/CrystalDiskInfo",
+    "error": ""
+  },
+  {
+    "id": "TechPowerUp.GPU-Z",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/t/TechPowerUp/GPU-Z",
+    "error": ""
+  },
+  {
+    "id": "REALiX.HWiNFO",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/r/REALiX/HWiNFO",
+    "error": ""
+  },
+  {
+    "id": "CPUID.CPU-Z",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/c/CPUID/CPU-Z",
+    "error": ""
+  },
+  {
+    "id": "Mozilla.Firefox",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/m/Mozilla/Firefox",
+    "error": ""
+  },
+  {
+    "id": "Google.Chrome",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/g/Google/Chrome",
+    "error": ""
+  },
+  {
+    "id": "LocalSend.LocalSend",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/l/LocalSend/LocalSend",
+    "error": ""
+  },
+  {
+    "id": "TheDocumentFoundation.LibreOffice",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/t/TheDocumentFoundation/LibreOffice",
+    "error": ""
+  },
+  {
+    "id": "Mozilla.Thunderbird",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/m/Mozilla/Thunderbird",
+    "error": ""
+  },
+  {
+    "id": "ONLYOFFICE.DesktopEditors",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/o/ONLYOFFICE/DesktopEditors",
+    "error": ""
+  },
+  {
+    "id": "SumatraPDF.SumatraPDF",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/s/SumatraPDF/SumatraPDF",
+    "error": ""
+  },
+  {
+    "id": "Joplin.Joplin",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/j/Joplin/Joplin",
+    "error": ""
+  },
+  {
+    "id": "Obsidian.Obsidian",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/o/Obsidian/Obsidian",
+    "error": ""
+  },
+  {
+    "id": "calibre.calibre",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/c/calibre/calibre",
+    "error": ""
+  },
+  {
+    "id": "DigitalScholar.Zotero",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/d/DigitalScholar/Zotero",
+    "error": ""
+  },
+  {
+    "id": "VideoLAN.VLC",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/v/VideoLAN/VLC",
+    "error": ""
+  },
+  {
+    "id": "Audacity.Audacity",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/a/Audacity/Audacity",
+    "error": ""
+  },
+  {
+    "id": "OBSProject.OBSStudio",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/o/OBSProject/OBSStudio",
+    "error": ""
+  },
+  {
+    "id": "HandBrake.HandBrake",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/h/HandBrake/HandBrake",
+    "error": ""
+  },
+  {
+    "id": "Meltytech.Shotcut",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/m/Meltytech/Shotcut",
+    "error": ""
+  },
+  {
+    "id": "KDE.Kdenlive",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/k/KDE/Kdenlive",
+    "error": ""
+  },
+  {
+    "id": "MusicBrainz.Picard",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/m/MusicBrainz/Picard",
+    "error": ""
+  },
+  {
+    "id": "GIMP.GIMP.3",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/g/GIMP/GIMP/3",
+    "error": ""
+  },
+  {
+    "id": "KDE.Krita",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/k/KDE/Krita",
+    "error": ""
+  },
+  {
+    "id": "Inkscape.Inkscape",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/i/Inkscape/Inkscape",
+    "error": ""
+  },
+  {
+    "id": "dotPDN.PaintDotNet",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/d/dotPDN/PaintDotNet",
+    "error": ""
+  },
+  {
+    "id": "BlenderFoundation.Blender",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/b/BlenderFoundation/Blender",
+    "error": ""
+  },
+  {
+    "id": "ShareX.ShareX",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/s/ShareX/ShareX",
+    "error": ""
+  },
+  {
+    "id": "Greenshot.Greenshot",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/g/Greenshot/Greenshot",
+    "error": ""
+  },
+  {
+    "id": "KeePassXCTeam.KeePassXC",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/k/KeePassXCTeam/KeePassXC",
+    "error": ""
+  },
+  {
+    "id": "Bitwarden.Bitwarden",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/b/Bitwarden/Bitwarden",
+    "error": ""
+  },
+  {
+    "id": "Duplicati.Duplicati",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/d/Duplicati/Duplicati",
+    "error": ""
+  },
+  {
+    "id": "Notepad++.Notepad++",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/n/Notepad++/Notepad++",
+    "error": ""
+  },
+  {
+    "id": "Microsoft.VisualStudioCode",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/m/Microsoft/VisualStudioCode",
+    "error": ""
+  },
+  {
+    "id": "Python.Python.3.13",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/p/Python/Python/3/13",
+    "error": ""
+  },
+  {
+    "id": "OpenJS.NodeJS.LTS",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/o/OpenJS/NodeJS/LTS",
+    "error": ""
+  },
+  {
+    "id": "Git.Git",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/g/Git/Git",
+    "error": ""
+  },
+  {
+    "id": "WinMerge.WinMerge",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/w/WinMerge/WinMerge",
+    "error": ""
+  },
+  {
+    "id": "DBBrowserForSQLite.DBBrowserForSQLite",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/d/DBBrowserForSQLite/DBBrowserForSQLite",
+    "error": ""
+  },
+  {
+    "id": "Geany.Geany",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/g/Geany/Geany",
+    "error": ""
+  },
+  {
+    "id": "VSCodium.VSCodium",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/v/VSCodium/VSCodium",
+    "error": ""
+  },
+  {
+    "id": "PuTTY.PuTTY",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/p/PuTTY/PuTTY",
+    "error": ""
+  },
+  {
+    "id": "PDFArranger.PDFArranger",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/p/PDFArranger/PDFArranger",
+    "error": ""
+  },
+  {
+    "id": "restic.restic",
+    "verified": true,
+    "url": "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/r/restic/restic",
+    "error": ""
+  }
+]

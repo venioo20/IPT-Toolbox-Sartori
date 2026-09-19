@@ -1,0 +1,13 @@
+Validation v0.2.0 — 19 septembre 2026
+Compilation Release : réussie, 0 erreur et 0 avertissement (-warnaserror).
+Publication : net8.0-windows, win-x64, autonome, fichier exécutable unique + configuration.
+50 logiciels et 50 identifiants WinGet uniques.
+50 dossiers de manifestes confirmés dans microsoft/winget-pkgs.
+8 catégories, 8 profils ; toutes les références de profils existent.
+Aucune présélection ; case exécution désactivée par défaut.
+Test du moteur : 50 simulations réussies avec PATH vide, sans WinGet.
+Test d'annulation de la simulation : réussi.
+Aucune installation réelle lancée ; interface non testée visuellement.
+Arguments WinGet séparés ; tests de refus des identifiants malformés réussis.
+Scan des sources : aucun motif de secret reconnu ni chemin utilisateur détecté.
+Publication publique sans fichiers de débogage PDB.

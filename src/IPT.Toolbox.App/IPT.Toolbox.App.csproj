@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyName>IPT.Toolbox</AssemblyName>
+    <RootNamespace>IPT.Toolbox.App</RootNamespace>
+    <DebugType>none</DebugType><DebugSymbols>false</DebugSymbols><Version>0.2.0</Version><Product>IPT Toolbox Sartori — Informatique Pour Tous</Product><Title>IPT Toolbox Sartori</Title>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IPT.Toolbox.Core\IPT.Toolbox.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\config\**\*">
+      <Link>config\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\scripts\**\*">
+      <Link>scripts\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
+
+

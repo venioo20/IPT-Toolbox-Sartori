@@ -1,0 +1,404 @@
+{
+  "packages": [
+    {
+      "id": "7zip",
+      "name": "7-Zip",
+      "category": "Utilitaires",
+      "wingetId": "7zip.7zip",
+      "enabledByDefault": false,
+      "notes": "Compression et extraction d'archives"
+    },
+    {
+      "id": "peazip",
+      "name": "PeaZip",
+      "category": "Utilitaires",
+      "wingetId": "Giorgiotani.Peazip",
+      "enabledByDefault": false,
+      "notes": "Alternative pour les archives"
+    },
+    {
+      "id": "powertoys",
+      "name": "Microsoft PowerToys",
+      "category": "Utilitaires",
+      "wingetId": "Microsoft.PowerToys",
+      "enabledByDefault": false,
+      "notes": "Outils de productivité Windows"
+    },
+    {
+      "id": "everything",
+      "name": "Everything",
+      "category": "Utilitaires",
+      "wingetId": "voidtools.Everything",
+      "enabledByDefault": false,
+      "notes": "Recherche rapide de fichiers"
+    },
+    {
+      "id": "windirstat",
+      "name": "WinDirStat",
+      "category": "Technicien",
+      "wingetId": "WinDirStat.WinDirStat",
+      "enabledByDefault": false,
+      "notes": "Analyse de l'espace disque"
+    },
+    {
+      "id": "treesize",
+      "name": "TreeSize Free",
+      "category": "Technicien",
+      "wingetId": "JAMSoftware.TreeSize.Free",
+      "enabledByDefault": false,
+      "notes": "Analyse des dossiers volumineux"
+    },
+    {
+      "id": "crystaldiskinfo",
+      "name": "CrystalDiskInfo",
+      "category": "Technicien",
+      "wingetId": "CrystalDewWorld.CrystalDiskInfo",
+      "enabledByDefault": false,
+      "notes": "État de santé des disques"
+    },
+    {
+      "id": "hwinfo",
+      "name": "HWiNFO",
+      "category": "Technicien",
+      "wingetId": "REALiX.HWiNFO",
+      "enabledByDefault": false,
+      "notes": "Informations matérielles ; licence à vérifier en entreprise"
+    },
+    {
+      "id": "cpu-z",
+      "name": "CPU-Z",
+      "category": "Technicien",
+      "wingetId": "CPUID.CPU-Z",
+      "enabledByDefault": false,
+      "notes": "Informations processeur et mémoire"
+    },
+    {
+      "id": "gpu-z",
+      "name": "GPU-Z",
+      "category": "Technicien",
+      "wingetId": "TechPowerUp.GPU-Z",
+      "enabledByDefault": false,
+      "notes": "Informations carte graphique"
+    },
+    {
+      "id": "firefox",
+      "name": "Mozilla Firefox",
+      "category": "Internet",
+      "wingetId": "Mozilla.Firefox",
+      "enabledByDefault": false,
+      "notes": "Navigateur web"
+    },
+    {
+      "id": "chrome",
+      "name": "Google Chrome",
+      "category": "Internet",
+      "wingetId": "Google.Chrome",
+      "enabledByDefault": false,
+      "notes": "Navigateur web alternatif"
+    },
+    {
+      "id": "thunderbird",
+      "name": "Mozilla Thunderbird",
+      "category": "Internet",
+      "wingetId": "Mozilla.Thunderbird",
+      "enabledByDefault": false,
+      "notes": "Courrier électronique et agenda"
+    },
+    {
+      "id": "localsend",
+      "name": "LocalSend",
+      "category": "Internet",
+      "wingetId": "LocalSend.LocalSend",
+      "enabledByDefault": false,
+      "notes": "Partage de fichiers sur le réseau local"
+    },
+    {
+      "id": "libreoffice",
+      "name": "LibreOffice",
+      "category": "Bureautique",
+      "wingetId": "TheDocumentFoundation.LibreOffice",
+      "enabledByDefault": false,
+      "notes": "Suite bureautique libre"
+    },
+    {
+      "id": "onlyoffice",
+      "name": "ONLYOFFICE Desktop Editors",
+      "category": "Bureautique",
+      "wingetId": "ONLYOFFICE.DesktopEditors",
+      "enabledByDefault": false,
+      "notes": "Suite bureautique alternative"
+    },
+    {
+      "id": "sumatrapdf",
+      "name": "SumatraPDF",
+      "category": "Bureautique",
+      "wingetId": "SumatraPDF.SumatraPDF",
+      "enabledByDefault": false,
+      "notes": "Lecteur PDF léger"
+    },
+    {
+      "id": "pdfarranger",
+      "name": "PDF Arranger",
+      "category": "Bureautique",
+      "wingetId": "PDFArranger.PDFArranger",
+      "enabledByDefault": false,
+      "notes": "Assembler et réorganiser des PDF"
+    },
+    {
+      "id": "joplin",
+      "name": "Joplin",
+      "category": "Bureautique",
+      "wingetId": "Joplin.Joplin",
+      "enabledByDefault": false,
+      "notes": "Prise de notes"
+    },
+    {
+      "id": "obsidian",
+      "name": "Obsidian",
+      "category": "Bureautique",
+      "wingetId": "Obsidian.Obsidian",
+      "enabledByDefault": false,
+      "notes": "Notes en Markdown"
+    },
+    {
+      "id": "calibre",
+      "name": "Calibre",
+      "category": "Bureautique",
+      "wingetId": "calibre.calibre",
+      "enabledByDefault": false,
+      "notes": "Bibliothèque de livres numériques"
+    },
+    {
+      "id": "zotero",
+      "name": "Zotero",
+      "category": "Bureautique",
+      "wingetId": "DigitalScholar.Zotero",
+      "enabledByDefault": false,
+      "notes": "Gestion de références bibliographiques"
+    },
+    {
+      "id": "vlc",
+      "name": "VLC media player",
+      "category": "Multimédia",
+      "wingetId": "VideoLAN.VLC",
+      "enabledByDefault": false,
+      "notes": "Lecteur multimédia"
+    },
+    {
+      "id": "audacity",
+      "name": "Audacity",
+      "category": "Multimédia",
+      "wingetId": "Audacity.Audacity",
+      "enabledByDefault": false,
+      "notes": "Enregistrement et montage audio"
+    },
+    {
+      "id": "obs",
+      "name": "OBS Studio",
+      "category": "Multimédia",
+      "wingetId": "OBSProject.OBSStudio",
+      "enabledByDefault": false,
+      "notes": "Capture vidéo et diffusion"
+    },
+    {
+      "id": "handbrake",
+      "name": "HandBrake",
+      "category": "Multimédia",
+      "wingetId": "HandBrake.HandBrake",
+      "enabledByDefault": false,
+      "notes": "Conversion vidéo"
+    },
+    {
+      "id": "shotcut",
+      "name": "Shotcut",
+      "category": "Multimédia",
+      "wingetId": "Meltytech.Shotcut",
+      "enabledByDefault": false,
+      "notes": "Montage vidéo"
+    },
+    {
+      "id": "kdenlive",
+      "name": "Kdenlive",
+      "category": "Multimédia",
+      "wingetId": "KDE.Kdenlive",
+      "enabledByDefault": false,
+      "notes": "Montage vidéo avancé"
+    },
+    {
+      "id": "musicbrainz",
+      "name": "MusicBrainz Picard",
+      "category": "Multimédia",
+      "wingetId": "MusicBrainz.Picard",
+      "enabledByDefault": false,
+      "notes": "Organisation et métadonnées musicales"
+    },
+    {
+      "id": "gimp",
+      "name": "GIMP",
+      "category": "Création",
+      "wingetId": "GIMP.GIMP.3",
+      "enabledByDefault": false,
+      "notes": "Retouche d'images"
+    },
+    {
+      "id": "inkscape",
+      "name": "Inkscape",
+      "category": "Création",
+      "wingetId": "Inkscape.Inkscape",
+      "enabledByDefault": false,
+      "notes": "Dessin vectoriel"
+    },
+    {
+      "id": "krita",
+      "name": "Krita",
+      "category": "Création",
+      "wingetId": "KDE.Krita",
+      "enabledByDefault": false,
+      "notes": "Peinture numérique"
+    },
+    {
+      "id": "blender",
+      "name": "Blender",
+      "category": "Création",
+      "wingetId": "BlenderFoundation.Blender",
+      "enabledByDefault": false,
+      "notes": "Création et animation 3D"
+    },
+    {
+      "id": "paintnet",
+      "name": "Paint.NET",
+      "category": "Création",
+      "wingetId": "dotPDN.PaintDotNet",
+      "enabledByDefault": false,
+      "notes": "Retouche photo accessible"
+    },
+    {
+      "id": "sharex",
+      "name": "ShareX",
+      "category": "Création",
+      "wingetId": "ShareX.ShareX",
+      "enabledByDefault": false,
+      "notes": "Captures d'écran ; partage en ligne facultatif"
+    },
+    {
+      "id": "greenshot",
+      "name": "Greenshot",
+      "category": "Création",
+      "wingetId": "Greenshot.Greenshot",
+      "enabledByDefault": false,
+      "notes": "Capture et annotation d'écran"
+    },
+    {
+      "id": "keepassxc",
+      "name": "KeePassXC",
+      "category": "Sécurité et sauvegarde",
+      "wingetId": "KeePassXCTeam.KeePassXC",
+      "enabledByDefault": false,
+      "notes": "Gestionnaire de mots de passe local"
+    },
+    {
+      "id": "bitwarden",
+      "name": "Bitwarden",
+      "category": "Sécurité et sauvegarde",
+      "wingetId": "Bitwarden.Bitwarden",
+      "enabledByDefault": false,
+      "notes": "Gestionnaire de mots de passe avec compte"
+    },
+    {
+      "id": "duplicati",
+      "name": "Duplicati",
+      "category": "Sécurité et sauvegarde",
+      "wingetId": "Duplicati.Duplicati",
+      "enabledByDefault": false,
+      "notes": "Sauvegardes chiffrées à configurer"
+    },
+    {
+      "id": "restic",
+      "name": "restic",
+      "category": "Sécurité et sauvegarde",
+      "wingetId": "restic.restic",
+      "enabledByDefault": false,
+      "notes": "Sauvegarde chiffrée en ligne de commande pour techniciens"
+    },
+    {
+      "id": "notepadplusplus",
+      "name": "Notepad++",
+      "category": "Développement",
+      "wingetId": "Notepad++.Notepad++",
+      "enabledByDefault": false,
+      "notes": "Éditeur de texte"
+    },
+    {
+      "id": "vscode",
+      "name": "Visual Studio Code",
+      "category": "Développement",
+      "wingetId": "Microsoft.VisualStudioCode",
+      "enabledByDefault": false,
+      "notes": "Éditeur de code"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "category": "Développement",
+      "wingetId": "Git.Git",
+      "enabledByDefault": false,
+      "notes": "Gestion de versions"
+    },
+    {
+      "id": "python",
+      "name": "Python 3.13",
+      "category": "Développement",
+      "wingetId": "Python.Python.3.13",
+      "enabledByDefault": false,
+      "notes": "Langage Python"
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js LTS",
+      "category": "Développement",
+      "wingetId": "OpenJS.NodeJS.LTS",
+      "enabledByDefault": false,
+      "notes": "Environnement JavaScript LTS"
+    },
+    {
+      "id": "winmerge",
+      "name": "WinMerge",
+      "category": "Développement",
+      "wingetId": "WinMerge.WinMerge",
+      "enabledByDefault": false,
+      "notes": "Comparaison de fichiers"
+    },
+    {
+      "id": "sqlitebrowser",
+      "name": "DB Browser for SQLite",
+      "category": "Développement",
+      "wingetId": "DBBrowserForSQLite.DBBrowserForSQLite",
+      "enabledByDefault": false,
+      "notes": "Explorer les bases SQLite"
+    },
+    {
+      "id": "vscodium",
+      "name": "VSCodium",
+      "category": "Développement",
+      "wingetId": "VSCodium.VSCodium",
+      "enabledByDefault": false,
+      "notes": "Éditeur de code alternatif"
+    },
+    {
+      "id": "geany",
+      "name": "Geany",
+      "category": "Développement",
+      "wingetId": "Geany.Geany",
+      "enabledByDefault": false,
+      "notes": "Éditeur de code léger"
+    },
+    {
+      "id": "putty",
+      "name": "PuTTY",
+      "category": "Technicien",
+      "wingetId": "PuTTY.PuTTY",
+      "enabledByDefault": false,
+      "notes": "Client SSH pour systèmes autorisés"
+    }
+  ]
+}

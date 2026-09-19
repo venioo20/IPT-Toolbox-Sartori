@@ -1,2 +1,47 @@
-# IPT-Toolbox-Sartori
-IPT Toolbox Sartori — Informatique Pour Tous. Boîte à outils Windows .NET 8 : 50 logiciels via WinGet, profils et simulation par défaut.
+# IPT Toolbox Sartori — Informatique Pour Tous
+
+Version 0.2.0. Projet Windows Forms C# .NET 8, modifié à partir de votre v0.1.
+
+## Utilisation
+
+Extraire entièrement l'archive, puis ouvrir `publish/win-x64/IPT.Toolbox.exe` (ou `IPT.Toolbox.exe` dans l'archive application seule). Choisir un profil ou des logiciels, puis cliquer sur PRÉPARER CE PC.
+
+Au démarrage : aucun logiciel coché, mode simulation actif. La simulation ne lance aucune commande WinGet. Pour installer, cocher explicitement MODE EXÉCUTION puis cliquer sur PRÉPARER CE PC. Cette autorisation n'est pas mémorisée après fermeture.
+
+La version autonome inclut .NET 8. Windows x64 est requis. Les installations réelles nécessitent WinGet (Installateur d'application Microsoft), Internet et parfois une élévation Windows. Les licences et comptes propres aux logiciels restent applicables. Les journaux sont enregistrés dans logs : extraire dans un dossier accessible en écriture.
+
+## Changements
+
+- Nom et titre : IPT Toolbox Sartori — Informatique Pour Tous.
+- 50 logiciels, affichés par catégorie : Utilitaires, Internet, Bureautique, Multimédia, Création, Technicien, Développement, Sécurité et sauvegarde.
+- 8 profils : Personnalisé, Essentiel, Bureautique, Multimédia, Création, Technicien, Développement, Sécurité et sauvegarde.
+- Aucun logiciel présélectionné ; simulation par défaut sans commande WinGet.
+- Installation par identifiant exact et source winget.
+- Pas d'outil de contournement, nettoyage de registre, activation non officielle ou désactivation antivirus.
+- Options restauration, confidentialité et Windows Update désactivées et marquées « bientôt » : ces modules ne sont pas implémentés.
+- Contexte nullable corrigé dans MainForm.Designer.cs avec #nullable enable.
+- Initialisation corrigée pour appliquer le premier profil après chargement de la liste.
+
+## Catalogue
+
+config/packages.json contient les 50 noms, catégories, identifiants et notes. config/profiles.json définit les profils. config/winget-verification.json conserve les liens des 50 dossiers confirmés dans le dépôt Microsoft WinGet le 19 septembre 2026.
+Source : https://github.com/microsoft/winget-pkgs
+
+La présence du manifeste valide l'identifiant, pas la réussite future de toutes les installations. Les versions disponibles et les licences peuvent évoluer. Aucun des logiciels du catalogue n'a été installé pour cette livraison.
+
+## Compilation
+
+Depuis PowerShell : ./build.ps1 puis ./publish.ps1. Un SDK compatible .NET 8 est nécessaire. Cette livraison a été construite avec le SDK 10.0.401 en conservant net8.0-windows.
+
+Les tests dans tests/IPT.Toolbox.Checks.csproj contrôlent le catalogue, les profils, la simulation complète sans WinGet et son annulation. Avec .NET 8 installé : dotnet run --project tests/IPT.Toolbox.Checks.csproj -- .
+
+## Limites
+
+En mode réel, la détection des logiciels déjà présents dépend de WinGet. La simulation décrit seulement les actions prévues. L'annulation ne garantit pas l'arrêt d'un installateur Windows déjà lancé. L'application n'est pas signée numériquement. Aucun test d'installation réelle ni contrôle visuel interactif n'a été effectué pour cette livraison.
+
+## Publication et sécurité
+
+Les commandes WinGet utilisent des arguments séparés et des identifiants validés. Le dépôt contient une politique SECURITY.md, des exclusions de fichiers sensibles et une compilation automatique avec permissions en lecture seule. Les actions sont figées sur leurs empreintes de commit.
+
+Aucune licence de réutilisation générale n'est accordée pour le moment. La visibilité publique ne vaut pas autorisation de redistribution du code ; les conditions GitHub restent applicables.
+

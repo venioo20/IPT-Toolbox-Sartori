@@ -11,4 +11,6 @@ internal static class AppPaths
         Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
         "IPT Toolbox Sartori");
     public static string LicenseVaultFile => Path.Combine(UserDataDirectory, "license-vault.dat");
+    public static string ProLicenseFile => Path.Combine(UserDataDirectory, "ipt-pro.license");
+    public static string CustomPackagesFile => Path.Combine(UserDataDirectory, "custom-packages.json");
 }

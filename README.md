@@ -1,12 +1,23 @@
 # IPT Toolbox Sartori — Informatique Pour Tous
 
-Version 0.3.0. Projet Windows Forms C# .NET 8, modifié à partir de votre v0.1.
+Version 0.4.0. Projet Windows Forms C# .NET 8, modifié à partir de votre v0.1.
 
 ## Licences professionnelles (première étape)
 
 Le bouton **LICENCES PRO** ouvre un inventaire local permettant d'ajouter un produit, son édition, son type de licence, le nombre de places, les échéances et, lorsque le contrat l'autorise, ses clés. Les licences peuvent être attribuées manuellement à un client et un poste, puis libérées. Des états signalent un stock faible, épuisé ou une expiration proche.
 
 Le coffre complet est chiffré par Windows pour l'utilisateur courant et stocké dans `%LOCALAPPDATA%/IPT Toolbox Sartori/license-vault.dat`. Il ne doit pas être copié dans le dépôt GitHub. Les clés ne sont jamais affichées dans les tableaux ou écrites dans les journaux. Cette première étape ne réalise aucune activation automatique auprès d'un éditeur et ne synchronise pas plusieurs techniciens.
+
+## IPT Toolbox Pro
+
+L'accès Pro est protégé par une licence signée. La clé privée de signature reste hors du dépôt ; seule la clé publique de vérification est incluse dans l'application.
+
+- abonnement mensuel : 9,90 € via PayPal ;
+- licence définitive : 79,90 € via PayPal ;
+- accès au coffre Licences Pro ;
+- ajout local de logiciels personnalisés avec un identifiant WinGet exact.
+
+Le paiement PayPal n'active pas automatiquement le logiciel. Le propriétaire vérifie le paiement, puis crée une clé avec `tools/Create-IPTProLicense.ps1` et sa clé privée conservée séparément. Les clés commerciales des logiciels tiers restent à la charge du professionnel et ne sont jamais fournies par IPT Toolbox.
 
 ## Utilisation
 

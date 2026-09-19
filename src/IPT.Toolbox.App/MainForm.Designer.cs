@@ -25,6 +25,8 @@ partial class MainForm
     private TextBox logTextBox = null!;
     private Button licensesButton = null!;
     private Label versionLabel = null!;
+    private Button proAccessButton = null!;
+    private Button customPackageButton = null!;
 
     protected override void Dispose(bool disposing)
     {
@@ -56,6 +58,8 @@ partial class MainForm
         logTextBox = new TextBox();
         licensesButton = new Button();
         versionLabel = new Label();
+        proAccessButton = new Button();
+        customPackageButton = new Button();
         machineGroupBox.SuspendLayout();
         profileGroupBox.SuspendLayout();
         packagesGroupBox.SuspendLayout();
@@ -77,9 +81,9 @@ partial class MainForm
         subtitleLabel.Text = "Informatique Pour Tous";
         // licensesButton
         licensesButton.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-        licensesButton.Location = new Point(746, 27);
+        licensesButton.Location = new Point(836, 27);
         licensesButton.Name = "licensesButton";
-        licensesButton.Size = new Size(230, 44);
+        licensesButton.Size = new Size(140, 44);
         licensesButton.Text = "LICENCES PRO";
         licensesButton.UseVisualStyleBackColor = true;
         licensesButton.Click += licensesButton_Click;
@@ -114,6 +118,7 @@ partial class MainForm
         profileDescriptionLabel.Size = new Size(410, 42);
         // packagesGroupBox
         packagesGroupBox.Controls.Add(packagesCheckedListBox);
+        packagesGroupBox.Controls.Add(customPackageButton);
         packagesGroupBox.Location = new Point(24, 308);
         packagesGroupBox.Name = "packagesGroupBox";
         packagesGroupBox.Size = new Size(454, 392);
@@ -121,11 +126,20 @@ partial class MainForm
         // packagesCheckedListBox
         packagesCheckedListBox.HorizontalScrollbar = true;
         packagesCheckedListBox.CheckOnClick = true;
-        packagesCheckedListBox.Dock = DockStyle.Fill;
+        packagesCheckedListBox.Location = new Point(8, 22);
         packagesCheckedListBox.FormattingEnabled = true;
         packagesCheckedListBox.IntegralHeight = false;
         packagesCheckedListBox.Name = "packagesCheckedListBox";
         packagesCheckedListBox.Padding = new Padding(8);
+        packagesCheckedListBox.Size = new Size(438, 322);
+        // customPackageButton
+        customPackageButton.Enabled = false;
+        customPackageButton.Location = new Point(8, 350);
+        customPackageButton.Name = "customPackageButton";
+        customPackageButton.Size = new Size(438, 34);
+        customPackageButton.Text = "AJOUTER UN LOGICIEL PERSONNALISÉ — PRO";
+        customPackageButton.UseVisualStyleBackColor = true;
+        customPackageButton.Click += customPackageButton_Click;
         // optionsGroupBox
         optionsGroupBox.Controls.Add(createRestorePointCheckBox);
         optionsGroupBox.Controls.Add(privacyCheckBox);
@@ -200,6 +214,14 @@ partial class MainForm
         versionLabel.Name = "versionLabel";
         versionLabel.Size = new Size(126, 18);
         versionLabel.TextAlign = ContentAlignment.MiddleRight;
+        // proAccessButton
+        proAccessButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+        proAccessButton.Location = new Point(650, 27);
+        proAccessButton.Name = "proAccessButton";
+        proAccessButton.Size = new Size(176, 44);
+        proAccessButton.Text = "ACHETER / ACTIVER PRO";
+        proAccessButton.UseVisualStyleBackColor = true;
+        proAccessButton.Click += proAccessButton_Click;
         // MainForm
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
@@ -216,6 +238,7 @@ partial class MainForm
         Controls.Add(machineGroupBox);
         Controls.Add(subtitleLabel);
         Controls.Add(titleLabel);
+        Controls.Add(proAccessButton);
         Controls.Add(licensesButton);
         FormBorderStyle = FormBorderStyle.FixedSingle;
         MaximizeBox = false;

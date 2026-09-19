@@ -8,10 +8,13 @@ public partial class MainForm : Form
     private readonly CatalogService _catalogService = new();
     private readonly MachineInspector _machineInspector = new();
     private readonly PackageDetector _packageDetector = new();
+    private readonly ProLicenseService _proLicenseService = new(AppPaths.ProLicenseFile);
+    private readonly CustomPackageService _customPackageService = new(AppPaths.CustomPackagesFile);
     private readonly LogService _logger;
     private IReadOnlyList<PackageDefinition> _packages = [];
     private IReadOnlyList<ProfileDefinition> _profiles = [];
     private CancellationTokenSource? _runCts;
+    private ProLicenseStatus _proStatus = new(false, "IPT Toolbox Pro n’est pas activé.");
 
     public MainForm()
     {
@@ -33,7 +36,9 @@ public partial class MainForm : Form
         {
             AppendLog("Chargement d'IPT Toolbox Sartori…");
 
-            _packages = (await _catalogService.LoadPackagesAsync(AppPaths.PackagesFile)).OrderBy(p => p.Category).ThenBy(p => p.Name).ToList();
+            var builtInPackages = await _catalogService.LoadPackagesAsync(AppPaths.PackagesFile);
+            var customPackages = await _customPackageService.LoadAsync();
+            _packages = builtInPackages.Concat(customPackages).OrderBy(p => p.Category).ThenBy(p => p.Name).ToList();
             _profiles = await _catalogService.LoadProfilesAsync(AppPaths.ProfilesFile);
 
 
@@ -48,6 +53,7 @@ public partial class MainForm : Form
             machineInfoLabel.Text = $"{machine.WindowsDescription} | {machine.Architecture} | Disque libre : {machine.FreeDiskGb} Go | WinGet : {(machine.WingetAvailable ? "OK" : "absent")}";
             AppendLog("Analyse du PC terminée.");
             AppendLog($"Journal : {_logger.LogFile}");
+            await RefreshProStateAsync();
         }
         catch (Exception ex)
         {
@@ -143,8 +149,57 @@ public partial class MainForm : Form
 
     private void licensesButton_Click(object? sender, EventArgs e)
     {
+        if (!_proStatus.HasFeature("license-vault"))
+        {
+            OpenProAccess();
+            return;
+        }
         using var form = new LicenseManagerForm();
         form.ShowDialog(this);
+    }
+
+    private void proAccessButton_Click(object? sender, EventArgs e) => OpenProAccess();
+
+    private async void OpenProAccess()
+    {
+        using var form = new ProAccessForm();
+        form.ShowDialog(this);
+        await RefreshProStateAsync();
+    }
+
+    private async void customPackageButton_Click(object? sender, EventArgs e)
+    {
+        if (!_proStatus.HasFeature("custom-packages"))
+        {
+            OpenProAccess();
+            return;
+        }
+        using var dialog = new CustomPackageDialog();
+        if (dialog.ShowDialog(this) != DialogResult.OK || dialog.Package is null) return;
+        try
+        {
+            await _customPackageService.AddAsync(dialog.Package);
+            var updated = _packages.Append(dialog.Package).OrderBy(p => p.Category).ThenBy(p => p.Name).ToList();
+            _packages = updated;
+            packagesCheckedListBox.Items.Clear();
+            foreach (var package in _packages) packagesCheckedListBox.Items.Add(package, false);
+            packagesGroupBox.Text = $"Logiciels ({_packages.Count}) — par catégorie";
+            AppendLog($"Logiciel personnalisé ajouté : {dialog.Package.Name} ({dialog.Package.WingetId}).");
+        }
+        catch (Exception ex) when (ex is ArgumentException or InvalidOperationException or IOException)
+        {
+            MessageBox.Show(this, ex.Message, "Logiciel personnalisé", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+    }
+
+    private async Task RefreshProStateAsync()
+    {
+        _proStatus = await _proLicenseService.LoadStatusAsync();
+        licensesButton.Enabled = _proStatus.HasFeature("license-vault");
+        customPackageButton.Enabled = _proStatus.HasFeature("custom-packages");
+        licensesButton.Text = _proStatus.IsValid ? "LICENCES PRO" : "LICENCES PRO 🔒";
+        proAccessButton.Text = _proStatus.IsValid ? _proStatus.Message.ToUpperInvariant() : "ACHETER / ACTIVER PRO";
+        AppendLog(_proStatus.Message);
     }
 
     private void SetBusy(bool busy)

@@ -72,6 +72,15 @@ if (OperatingSystem.IsWindows())
     Array.Clear(protectedSecret);
 }
 
+var proService = new ProLicenseService(Path.Combine(root, "test-results", "pro-test.license"));
+Check(!proService.Verify("not-a-license").IsValid, "Une fausse licence Pro est refusée");
+if (args.Length > 1)
+{
+    var signedToken = await File.ReadAllTextAsync(args[1]);
+    var proStatus = proService.Verify(signedToken);
+    Check(proStatus.IsValid && proStatus.HasFeature("license-vault") && proStatus.HasFeature("custom-packages"), "Licence Pro signée et fonctions autorisées");
+}
+
 sealed class TestProtector : IDataProtector
 {
     public byte[] Protect(byte[] clearData) => clearData.Select(x => (byte)(x ^ 0xA5)).ToArray();

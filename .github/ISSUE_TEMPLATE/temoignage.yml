@@ -1,0 +1,44 @@
+name: Donner un témoignage
+description: Partager votre avis après l'essai d'IPT Toolbox
+title: "[Témoignage] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci pour votre retour. Ne publiez aucune clé de licence, donnée client ou information confidentielle.
+  - type: dropdown
+    id: profil
+    attributes:
+      label: Votre profil
+      options:
+        - Technicien informatique indépendant
+        - Association de réparation informatique
+        - Petite entreprise
+        - Administrateur système
+        - Utilisateur Windows
+        - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: avis
+    attributes:
+      label: Votre avis en quelques phrases
+      placeholder: La fonction la plus utile a été...
+    validations:
+      required: true
+  - type: dropdown
+    id: recommandation
+    attributes:
+      label: Recommanderiez-vous IPT Toolbox ?
+      options:
+        - Oui
+        - Peut-être
+        - Pas encore
+    validations:
+      required: true
+  - type: checkboxes
+    id: publication
+    attributes:
+      label: Autorisation
+      options:
+        - label: J'autorise la publication de cet avis sur le site avec mon nom d'utilisateur GitHub.

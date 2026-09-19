@@ -1,6 +1,6 @@
 # IPT Toolbox Sartori — Informatique Pour Tous
 
-Version 0.4.0. Projet Windows Forms C# .NET 8, modifié à partir de votre v0.1.
+Version 0.4.1. Projet Windows Forms C# .NET 8, modifié à partir de votre v0.1.
 
 **Site officiel :** https://venioo20.github.io/IPT-Toolbox-Sartori/
 
@@ -14,12 +14,13 @@ Le coffre complet est chiffré par Windows pour l'utilisateur courant et stocké
 
 L'accès Pro est protégé par une licence signée. La clé privée de signature reste hors du dépôt ; seule la clé publique de vérification est incluse dans l'application.
 
-- abonnement mensuel : 9,90 € via PayPal ;
-- licence définitive : 79,90 € via PayPal ;
+- essai Pro : 14 jours après émission d'une clé signée ;
+- accès de 30 jours : 9,90 € via PayPal, sans renouvellement automatique ;
+- licence définitive de lancement : 79,90 € au lieu de 99,90 €, pour les 20 premiers utilisateurs ;
 - accès au coffre Licences Pro ;
 - ajout local de logiciels personnalisés avec un identifiant WinGet exact.
 
-Le paiement PayPal n'active pas automatiquement le logiciel. Le propriétaire vérifie le paiement, puis crée une clé avec `tools/Create-IPTProLicense.ps1` et sa clé privée conservée séparément. Les clés commerciales des logiciels tiers restent à la charge du professionnel et ne sont jamais fournies par IPT Toolbox.
+Le paiement PayPal n'active pas automatiquement le logiciel. Le propriétaire vérifie la demande d'essai ou le paiement, puis crée une clé avec `tools/Create-IPTProLicense.ps1` et sa clé privée conservée séparément. Utiliser le plan `trial`, `monthly` ou `lifetime`. Les clés commerciales des logiciels tiers restent à la charge du professionnel et ne sont jamais fournies par IPT Toolbox.
 
 ## Utilisation
 

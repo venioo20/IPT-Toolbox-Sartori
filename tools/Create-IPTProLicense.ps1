@@ -1,6 +1,6 @@
 param(
     [Parameter(Mandatory)] [string] $CustomerName,
-    [Parameter(Mandatory)] [ValidateSet('monthly', 'lifetime')] [string] $Plan,
+    [Parameter(Mandatory)] [ValidateSet('trial', 'monthly', 'lifetime')] [string] $Plan,
     [Parameter(Mandatory)] [string] $PrivateKeyPath,
     [string] $OutputPath = ".\IPT-Pro-$((Get-Date).ToString('yyyyMMdd-HHmmss')).txt"
 )
@@ -9,7 +9,11 @@ $ErrorActionPreference = 'Stop'
 if (-not (Test-Path -LiteralPath $PrivateKeyPath)) { throw 'Clé privée introuvable.' }
 
 $issued = [DateTime]::UtcNow
-$expires = if ($Plan -eq 'monthly') { $issued.AddMonths(1).ToString('O') } else { $null }
+$expires = switch ($Plan) {
+    'trial' { $issued.AddDays(14).ToString('O') }
+    'monthly' { $issued.AddMonths(1).ToString('O') }
+    default { $null }
+}
 $payload = [ordered]@{
     LicenseId = [Guid]::NewGuid().ToString('N')
     CustomerName = $CustomerName.Trim()

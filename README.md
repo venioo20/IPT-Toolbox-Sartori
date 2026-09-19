@@ -2,6 +2,8 @@
 
 Version 0.4.0. Projet Windows Forms C# .NET 8, modifié à partir de votre v0.1.
 
+**Site officiel :** https://venioo20.github.io/IPT-Toolbox-Sartori/
+
 ## Licences professionnelles (première étape)
 
 Le bouton **LICENCES PRO** ouvre un inventaire local permettant d'ajouter un produit, son édition, son type de licence, le nombre de places, les échéances et, lorsque le contrat l'autorise, ses clés. Les licences peuvent être attribuées manuellement à un client et un poste, puis libérées. Des états signalent un stock faible, épuisé ou une expiration proche.

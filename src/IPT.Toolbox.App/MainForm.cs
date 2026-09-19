@@ -18,6 +18,8 @@ public partial class MainForm : Form
         InitializeComponent();
         _logger = new LogService(AppPaths.LogDirectory);
         Text = "IPT Toolbox Sartori — Informatique Pour Tous";
+        var version = typeof(MainForm).Assembly.GetName().Version;
+        versionLabel.Text = $"Version {version?.ToString(3) ?? "0.3.0"}";
     }
 
     private async void MainForm_Load(object? sender, EventArgs e)
@@ -93,9 +95,9 @@ public partial class MainForm : Form
                 : "Mode SIMULATION : aucune installation réelle ne sera lancée.");
 
             if (createRestorePointCheckBox.Checked)
-                AppendLog("Point de restauration : prévu pour le module Windows (non exécuté dans v0.2). ");
+                AppendLog("Point de restauration : prévu pour le module Windows (non exécuté dans cette version). ");
             if (privacyCheckBox.Checked)
-                AppendLog("Confidentialité : prévue pour le module Windows (non exécutée dans v0.2). ");
+                AppendLog("Confidentialité : prévue pour le module Windows (non exécutée dans cette version). ");
             if (windowsUpdateCheckBox.Checked)
                 AppendLog("Windows Update : vérification prévue pour une version ultérieure.");
 

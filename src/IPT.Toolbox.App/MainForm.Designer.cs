@@ -24,6 +24,7 @@ partial class MainForm
     private Label statusLabel = null!;
     private TextBox logTextBox = null!;
     private Button licensesButton = null!;
+    private Label versionLabel = null!;
 
     protected override void Dispose(bool disposing)
     {
@@ -54,6 +55,7 @@ partial class MainForm
         statusLabel = new Label();
         logTextBox = new TextBox();
         licensesButton = new Button();
+        versionLabel = new Label();
         machineGroupBox.SuspendLayout();
         profileGroupBox.SuspendLayout();
         packagesGroupBox.SuspendLayout();
@@ -132,28 +134,28 @@ partial class MainForm
         optionsGroupBox.Location = new Point(500, 184);
         optionsGroupBox.Name = "optionsGroupBox";
         optionsGroupBox.Size = new Size(476, 182);
-        optionsGroupBox.Text = "Options";
+        optionsGroupBox.Text = "Options Windows — à venir";
         // createRestorePointCheckBox
         createRestorePointCheckBox.AutoSize = true;
         createRestorePointCheckBox.Checked = false;
         createRestorePointCheckBox.Enabled = false;
         createRestorePointCheckBox.CheckState = CheckState.Unchecked;
         createRestorePointCheckBox.Location = new Point(20, 31);
-        createRestorePointCheckBox.Text = "Point de restauration (bientôt)";
+        createRestorePointCheckBox.Text = "Point de restauration — désactivé dans cette version";
         // privacyCheckBox
         privacyCheckBox.AutoSize = true;
         privacyCheckBox.Checked = false;
         privacyCheckBox.Enabled = false;
         privacyCheckBox.CheckState = CheckState.Unchecked;
         privacyCheckBox.Location = new Point(20, 62);
-        privacyCheckBox.Text = "Confidentialité Windows (bientôt)";
+        privacyCheckBox.Text = "Confidentialité Windows — désactivé dans cette version";
         // windowsUpdateCheckBox
         windowsUpdateCheckBox.AutoSize = true;
         windowsUpdateCheckBox.Checked = false;
         windowsUpdateCheckBox.Enabled = false;
         windowsUpdateCheckBox.CheckState = CheckState.Unchecked;
         windowsUpdateCheckBox.Location = new Point(20, 93);
-        windowsUpdateCheckBox.Text = "Windows Update (bientôt)";
+        windowsUpdateCheckBox.Text = "Windows Update — désactivé dans cette version";
         // executeCheckBox
         executeCheckBox.Checked = false;
         executeCheckBox.AutoSize = true;
@@ -192,11 +194,18 @@ partial class MainForm
         logTextBox.ReadOnly = true;
         logTextBox.ScrollBars = ScrollBars.Vertical;
         logTextBox.Size = new Size(476, 180);
+        // versionLabel
+        versionLabel.ForeColor = Color.DimGray;
+        versionLabel.Location = new Point(850, 703);
+        versionLabel.Name = "versionLabel";
+        versionLabel.Size = new Size(126, 18);
+        versionLabel.TextAlign = ContentAlignment.MiddleRight;
         // MainForm
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         ClientSize = new Size(1000, 724);
         Controls.Add(logTextBox);
+        Controls.Add(versionLabel);
         Controls.Add(statusLabel);
         Controls.Add(progressBar);
         Controls.Add(cancelButton);

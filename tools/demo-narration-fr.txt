@@ -1,0 +1,15 @@
+Bienvenue dans IPT Toolbox Sartori, la boîte à outils Windows conçue pour préparer un ordinateur simplement et garder le contrôle sur chaque action.
+
+Commencez par choisir un profil. Ici, le profil Technicien sélectionne automatiquement les logiciels utiles, comme 7-Zip, Firefox, VLC, LibreOffice, HWiNFO et CrystalDiskInfo. Vous pouvez ensuite modifier librement cette sélection.
+
+IPT Toolbox démarre toujours en mode simulation. Dans ce mode, l’application vérifie la liste et décrit les opérations prévues, mais elle n’installe rien. Le journal permet de contrôler chaque étape avant de modifier le PC.
+
+Lorsque vous êtes prêt, activez volontairement le mode exécution. Cliquez sur Préparer ce PC. IPT Toolbox utilise alors l’identifiant exact du logiciel dans WinGet. Dans cet exemple, 7-Zip est téléchargé puis installé. La progression et le résultat restent visibles dans le journal.
+
+La version Pro ajoute un coffre de licences destiné aux professionnels. Vous pouvez enregistrer un produit, le nombre de licences achetées, les places utilisées et celles qui restent disponibles. Les clés sont conservées localement dans un coffre chiffré par Windows et ne sont jamais inscrites dans les journaux.
+
+Un utilisateur Pro peut aussi ajouter un logiciel absent du catalogue. Pour CCleaner, indiquez le nom du logiciel et l’identifiant WinGet Piriform point CCleaner. Choisissez une catégorie et, si nécessaire, l’exécutable utilisé pour détecter sa présence. Après validation, le logiciel rejoint votre catalogue local et peut être utilisé comme les autres.
+
+IPT Toolbox conserve une simulation active par défaut, vérifie les licences Pro signées et laisse l’utilisateur autoriser chaque installation réelle. Les licences commerciales de CCleaner, Avast ou d’autres éditeurs doivent toujours être achetées séparément auprès de leur fournisseur.
+
+Téléchargez IPT Toolbox Sartori sur le site officiel. La version gratuite permet de préparer les PC, et IPT Toolbox Pro ajoute la gestion des licences et les logiciels personnalisés.

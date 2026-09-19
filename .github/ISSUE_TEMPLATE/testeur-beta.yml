@@ -1,0 +1,50 @@
+name: Devenir testeur bêta
+description: Proposer de tester IPT Toolbox Sartori sur un PC Windows
+title: "[Bêta] Candidature — "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de participer. Cette demande est publique : ne partagez aucune clé de licence, donnée client, adresse ou information confidentielle.
+  - type: dropdown
+    id: profil
+    attributes:
+      label: Votre profil
+      options:
+        - Technicien informatique indépendant
+        - Association de réparation informatique
+        - Petite entreprise
+        - Administrateur système
+        - Utilisateur Windows expérimenté
+        - Autre
+    validations:
+      required: true
+  - type: dropdown
+    id: windows
+    attributes:
+      label: Version de Windows disponible pour le test
+      options:
+        - Windows 11
+        - Windows 10
+        - Windows 10 et Windows 11
+    validations:
+      required: true
+  - type: textarea
+    id: usage
+    attributes:
+      label: Comment préparez-vous vos PC aujourd'hui ?
+      description: Quelques phrases suffisent.
+      placeholder: J'installe habituellement les logiciels...
+    validations:
+      required: true
+  - type: checkboxes
+    id: engagement
+    attributes:
+      label: Test proposé
+      options:
+        - label: Je commencerai en mode simulation.
+          required: true
+        - label: Je peux envoyer un rapport après environ 30 minutes de test.
+          required: true
+        - label: Je retirerai toute donnée personnelle ou clé de licence de mes captures et journaux.
+          required: true

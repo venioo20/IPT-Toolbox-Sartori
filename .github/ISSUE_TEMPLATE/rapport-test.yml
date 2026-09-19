@@ -1,0 +1,61 @@
+name: Envoyer un rapport de test
+description: Partager un résultat de test clair et reproductible
+title: "[Test] Résultat — "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci pour votre retour. Ne publiez aucune clé de licence, donnée client, adresse ou information confidentielle. Masquez aussi votre nom d'utilisateur Windows dans les captures et journaux.
+  - type: input
+    id: version
+    attributes:
+      label: Version d'IPT Toolbox
+      placeholder: v0.4.0
+    validations:
+      required: true
+  - type: dropdown
+    id: windows
+    attributes:
+      label: Système testé
+      options:
+        - Windows 11
+        - Windows 10
+    validations:
+      required: true
+  - type: checkboxes
+    id: parcours
+    attributes:
+      label: Fonctions essayées
+      options:
+        - label: Sélection d'un profil
+        - label: Mode simulation
+        - label: Installation réelle volontaire
+        - label: Licences Pro
+        - label: Ajout d'un logiciel personnalisé avec WinGet
+  - type: dropdown
+    id: resultat
+    attributes:
+      label: Résultat global
+      options:
+        - Tout fonctionne
+        - Fonctionne en partie
+        - Bloqué par une erreur
+    validations:
+      required: true
+  - type: textarea
+    id: observations
+    attributes:
+      label: Que s'est-il passé ?
+      description: Décrivez les étapes, le résultat attendu et le résultat obtenu.
+    validations:
+      required: true
+  - type: textarea
+    id: amelioration
+    attributes:
+      label: Quelle amélioration serait la plus utile ?
+  - type: checkboxes
+    id: citation
+    attributes:
+      label: Témoignage
+      options:
+        - label: Vous pouvez citer mon retour sur le site, avec mon nom d'utilisateur GitHub.
